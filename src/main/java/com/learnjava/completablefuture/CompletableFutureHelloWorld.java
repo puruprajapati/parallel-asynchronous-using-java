@@ -339,7 +339,7 @@ public class CompletableFutureHelloWorld {
                 .thenAccept((result) -> {
                     log("result " + result);
                 })
-                .join();
+                .join();   // join will block the main thread
 
         log("Done!");
         delay(2000);
